@@ -2,11 +2,21 @@
 # and its dependencies with the aid of the Mix.Config module.
 use Mix.Config
 
+config :learn_ecto, ecto_repos: [LearnEcto.Repo]
+
 config :learn_ecto, LearnEcto.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "learn_ecto_repo",
-  username: "user",
-  password: "pass",
+  username: "rubikalinc",
+  password: "",
+  hostname: "localhost"
+
+
+config :learn_ecto, LearnEcto.Repo,
+  adapter: Ecto.Adapters.Postgres,
+  database: "learn_ecto_repo",
+  username: "rubikalinc",
+  password: "",
   hostname: "localhost"
 
 
